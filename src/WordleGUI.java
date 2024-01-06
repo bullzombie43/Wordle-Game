@@ -12,6 +12,8 @@ public class WordleGUI implements ActionListener{
 
     private static JFrame frame;
     private static JPanel panel;
+
+    private static String path = "/Users/justin/VSCODE PROJECTS/numberReveral/src/";
     
     private static JLabel title;
     private static JTextField textField;
@@ -69,7 +71,7 @@ public class WordleGUI implements ActionListener{
         }
 
         try { //copied from https://replit.com/@skutschke/WordleWords#Main.java
-            File myObj = new File("src/ValidWords.txt");
+            File myObj = new File(path + "ValidWords.txt");
             Scanner myReader = new Scanner(myObj);
             int indexCounter = 0;
             while (myReader.hasNextLine()) {
@@ -85,7 +87,7 @@ public class WordleGUI implements ActionListener{
         }
 
         try { //copied from https://replit.com/@skutschke/WordleWords#Main.java
-            File myObj = new File("src/wordleAnswers.txt");
+            File myObj = new File(path + "wordleAnswers.txt");
             Scanner myReader = new Scanner(myObj);
             int indexCounter = 0;
             while (myReader.hasNextLine()) {
