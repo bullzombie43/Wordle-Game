@@ -4,6 +4,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -111,6 +112,9 @@ public class WordleGUI implements ActionListener{
     }
 
     public static void main(String[] args){
+        ArrayList<String> a = new ArrayList<>();
+        a.add("hi");
+        System.out.println(a);
         new WordleGUI();
     }
 
